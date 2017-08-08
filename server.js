@@ -13,6 +13,10 @@ app.get('/arical-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
 });
 
+app.get('/arical-two', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
