@@ -5,6 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content= {
+    titel: 'Artical one | Varun' ,
+    heading: 'Artical one',
+    date: '5th sep 2017' ,
+    Content: `                  The attached code is one of the possible solution meeting the given               requirement. Please refer/use this only if you are not able solve the above given problem scenario within 3.5 hours.`
+    
+};
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
