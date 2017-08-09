@@ -6,13 +6,40 @@ var app = express();
 app.use(morgan('combined'));
 
 var articalone= {
-    titel: 'Artical one | Varun' ,
+    title: 'Artical one | Varun' ,
     heading: 'Artical one',
     date: '5th sep 2017' ,
     Content: `                  The attached code is one of the possible solution meeting the given               requirement. Please refer/use this only if you are not able solve the above given problem scenario within 3.5 hours.`
     
 };
 
+var htmlTemplate={
+<html>
+    <head>
+       <title>${title}
+       
+       </title> 
+       <link href="/ui/style.css" rel=stylesheet>
+    </head>
+        <body>
+                <div class = "container">
+                        <div>
+                            <a href ="/">Home</a> 
+                        
+                        <hr/>
+                        
+                        <h3>Artical one</h3>
+                        </div>
+                <div>
+                ${date}
+            </div>
+            <div>
+                ${content}
+            </div>
+            </div>
+        </body>
+</html>
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
