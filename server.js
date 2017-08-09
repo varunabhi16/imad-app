@@ -12,14 +12,16 @@ var articalone= {
     Content: `                  The attached code is one of the possible solution meeting the given               requirement. Please refer/use this only if you are not able solve the above given problem scenario within 3.5 hours.`
     
 };
+function createTemplate(data)
+{
+    
 
 var htmlTemplate={
 <html>
     <head>
-       <title>${title}
-       
+       <title> ${title}
        </title> 
-       <link href="/ui/style.css" rel=stylesheet>
+       <link href="/ui/style.css" rel="stylesheet"/>
     </head>
         <body>
                 <div class = "container">
@@ -40,6 +42,7 @@ var htmlTemplate={
         </body>
 </html>
 };
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
