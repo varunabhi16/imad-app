@@ -12,7 +12,7 @@ var articalone= {
     Content: `                  The attached code is one of the possible solution meeting the given               requirement. Please refer/use this only if you are not able solve the above given problem scenario within 3.5 hours.`
     
 };
-function createTemplate(data)
+/*function createTemplate(data)
 {
     
 
@@ -43,7 +43,7 @@ var htmlTemplate={
 </html>
 };
 }
-
+*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
