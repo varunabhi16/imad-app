@@ -20,7 +20,7 @@ var htmlTemplate={
 <html>
     <head>
        <title> ${title}
-       </title> 
+       </title>
        <link href="/ui/style.css" rel="stylesheet"/>
     </head>
         <body>
